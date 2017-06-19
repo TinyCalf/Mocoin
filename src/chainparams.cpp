@@ -50,7 +50,9 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
+    //const char* pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"; // BTC
+    const char* pszTimestamp = "Tianjing ebo tech stock index closed at Mon. Jun. 19";//Jonathan MBC
+    
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -70,14 +72,21 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 210000;
+
+        //consensus.nSubsidyHalvingInterval = 210000; //BTC
+        consensus.nSubsidyHalvingInterval = 1200000; //Jonathan MBC
+        
         consensus.BIP34Height = 227931;
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.BIP65Height = 388381; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 363725; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
-        consensus.nPowTargetSpacing = 10 * 60;
+        
+        //consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks BTC
+        //consensus.nPowTargetSpacing = 10 * 60; // 10min BTC
+        consensus.nPowTargetTimespan = 60 * 60 * 2; // two hour Jonathan MBC
+        consensus.nPowTargetSpacing = 5 * 60; // 5min Jonathan MBC
+
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
@@ -107,30 +116,53 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xf9;
-        pchMessageStart[1] = 0xbe;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0xd9;
-        nDefaultPort = 8333;
+
+        //pchMessageStart[0] = 0xf9; //BTC
+        //pchMessageStart[1] = 0xbe; //BTC
+        //pchMessageStart[2] = 0xb4; //BTC
+        //pchMessageStart[3] = 0xd9; //BTC
+        pchMessageStart[0] = 0x90;//Jonathan MBC
+        pchMessageStart[1] = 0x0d;//Jonathan MBC
+        pchMessageStart[2] = 0x23;//Jonathan MBC
+        pchMessageStart[3] = 0x33;//Jonathan MBC
+ 
+        //nDefaultPort = 8333; //BTC
+        nDefaultPort = 10086;  //Jonathan MBC
+
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);
+        //origin block params: nTime/nNonce/nBits/Version/repay coin
+        //genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);//BTC
+        genesis = CreateGenesisBlock(1497843511, 2257935339, 0x1d00ffff, 1, 200 * COIN);//Jonathan MBC
+        
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"));
-        assert(genesis.hashMerkleRoot == uint256S("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
+ 
+        //assert(consensus.hashGenesisBlock == uint256S("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f")); //BTC
+        //assert(genesis.hashMerkleRoot == uint256S("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b")); //BTC
+        assert(consensus.hashGenesisBlock == uint256S("0x")); //Jonathan MBC
+        assert(genesis.hashMerkleRoot == uint256S("0x")); //Jonathan MBC
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("bitcoin.sipa.be", "seed.bitcoin.sipa.be", true)); // Pieter Wuille, only supports x1, x5, x9, and xd
-        vSeeds.push_back(CDNSSeedData("bluematt.me", "dnsseed.bluematt.me", true)); // Matt Corallo, only supports x9
-        vSeeds.push_back(CDNSSeedData("dashjr.org", "dnsseed.bitcoin.dashjr.org")); // Luke Dashjr
-        vSeeds.push_back(CDNSSeedData("bitcoinstats.com", "seed.bitcoinstats.com", true)); // Christian Decker, supports x1 - xf
-        vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch", true)); // Jonas Schnelli, only supports x1, x5, x9, and xd
+        //如果你有7x24在线的服务器运行节点，那么请在这里加入他们的地址，可以是dns也可以是ip地址（v4，v6，--enable-ipv6）。
+        //如果没有的话，可以考虑和我一样暂时注释掉，在运行时候指定连接参数-addnoe=123.123.123.123 或者-dns -addnode=mynode.domain.com
+        //对应的修改一下TESTNET和REGTESTNET的网络节点地址。
+        // vSeeds.push_back(CDNSSeedData("bitcoin.sipa.be", "seed.bitcoin.sipa.be", true)); // Pieter Wuille, only supports x1, x5, x9, and xd
+        // vSeeds.push_back(CDNSSeedData("bluematt.me", "dnsseed.bluematt.me", true)); // Matt Corallo, only supports x9
+        // vSeeds.push_back(CDNSSeedData("dashjr.org", "dnsseed.bitcoin.dashjr.org")); // Luke Dashjr
+        // vSeeds.push_back(CDNSSeedData("bitcoinstats.com", "seed.bitcoinstats.com", true)); // Christian Decker, supports x1 - xf
+        // vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch", true)); // Jonas Schnelli, only supports x1, x5, x9, and xd
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
+        // base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0); //BTC
+        // base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5); //BTC
+        // base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128); //BTC
+        // base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >(); //BTC
+        // base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >(); //BTC
+
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,43); //J Jonathan MBC
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,53); //N Jonathan MBC
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,65); //T Jonathan MBC
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >(); //Jonathan MBC
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >(); //Jonathan MBC
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
