@@ -1,0 +1,7 @@
+python genesis.py -t 1231006505 -z "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" -n 2083236893 -v 5000000000
+
+ 
+python genesis.py -t 1411666331 -b 0x1d00ffff -n 2056985438 -z "shanghai stock index closed at 2343.57, on 24th Sept., 2014" -v 10000000000
+
+test  
+python genesis.py -t 1296688602 -n 414098458 -d 0x1d00ffff
