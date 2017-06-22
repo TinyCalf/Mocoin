@@ -97,7 +97,9 @@ public:
         consensus.nPowTargetTimespan = 60 * 60 * 2; // two hour Jonathan MBC
         consensus.nPowTargetSpacing = 5 * 60; // 5min Jonathan MBC
 
-        consensus.fPowAllowMinDifficultyBlocks = false;
+        //consensus.fPowAllowMinDifficultyBlocks = false;
+        consensus.fPowAllowMinDifficultyBlocks = true; //Jonathan
+
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
@@ -182,7 +184,10 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        //fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false; //Jonathan
+
+
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
