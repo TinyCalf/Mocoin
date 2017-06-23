@@ -331,6 +331,7 @@ void IncrementExtraNonce(CBlock* pblock, const CBlockIndex* pindexPrev, unsigned
 bool static ScanHash(const CBlockHeader *pblock, uint32_t& nNonce, uint256 *phash)
 {
     // Write the first 76 bytes of the block header to a double-SHA256 state.
+
     CHash256 hasher;
     CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
     ss << *pblock;
@@ -340,9 +341,34 @@ bool static ScanHash(const CBlockHeader *pblock, uint32_t& nNonce, uint256 *phas
     while (true) {
         nNonce++;
 
-        // Write the last 4 bytes of the block header (the nonce) to a copy of
-        // the double-SHA256 state, and compute the result.
+        //Write the last 4 bytes of the block header (the nonce) to a copy of
+        //the double-SHA256 state, and compute the result.
+
         CHash256(hasher).Write((unsigned char*)&nNonce, 4).Finalize((unsigned char*)phash);
+        
+
+        //*phash = pblock->ComputePowHash(nNonce);
+        // int 转 string
+        // stringstream ss;
+        // string str;
+        // ss<<phash;
+        // ss>>str;
+        //LogPrintf("MobicoinMiner cul nonce is : %d", nNonce);
+        //if (((uint16_t*)phash)[0] == 0) LogPrintf("phash[0] == 0 \n");
+        //if (((uint16_t*)phash)[0] == 1) LogPrintf("phash[1] == 0 \n");
+        //if (((uint16_t*)phash)[0] == 2) LogPrintf("phash[2] == 0 \n");
+        //if (((uint16_t*)phash)[0] == 3) LogPrintf("phash[3] == 0 \n");
+        //if (((uint16_t*)phash)[0] == 5) LogPrintf("phash[5] == 0 \n");
+        if (((uint16_t*)phash)[15] == 0) LogPrintf("phash[15] == 0 \n");
+        // else if (((uint16_t*)phash)[14] == 0) LogPrintf("phash[14] == 0 \n");
+        // else if (((uint16_t*)phash)[13] == 0) LogPrintf("phash[13] == 0 \n");
+        // else if (((uint16_t*)phash)[12] == 0) LogPrintf("phash[12] == 0 \n");
+        // else if (((uint16_t*)phash)[11] == 0) LogPrintf("phash[11] == 0 \n");
+        // else if (((uint16_t*)phash)[10] == 0) LogPrintf("phash[10] == 0 \n");
+        // else if (((uint16_t*)phash)[9] == 0) LogPrintf("phash[9] == 0 \n");
+        // else if (((uint16_t*)phash)[8] == 0) LogPrintf("phash[8] == 0 \n");
+        // else if (((uint16_t*)phash)[7] == 0) LogPrintf("phash[7] == 0 \n");
+        
 
         // Return the nonce if the hash has at least some zero bits,
         // caller will check if it has enough to reach the target
@@ -364,7 +390,7 @@ static bool ProcessBlockFound(const CBlock* pblock, const CChainParams& chainpar
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("BitcoinMiner: generated block is stale");
+            return error("MobicoinMiner: generated block is stale");
     }
 
     // Inform about the new block
@@ -373,14 +399,14 @@ static bool ProcessBlockFound(const CBlock* pblock, const CChainParams& chainpar
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, chainparams, NULL, pblock, true, NULL))
-        return error("BitcoinMiner: ProcessNewBlock, block not accepted");
+        return error("MobicoinMiner: ProcessNewBlock, block not accepted");
 
     return true;
 }
 
 void static BitcoinMiner(const CChainParams& chainparams)
 {
-    LogPrintf("BitcoinMiner started\n");
+    LogPrintf("MobicoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("bitcoin-miner");
 
@@ -421,13 +447,13 @@ void static BitcoinMiner(const CChainParams& chainparams)
             auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlock(chainparams, coinbaseScript->reserveScript));
             if (!pblocktemplate.get())
             {
-                LogPrintf("Error in BitcoinMiner: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
+                LogPrintf("Error in MobicoinMiner: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
                 return;
             }
             CBlock *pblock = &pblocktemplate->block;
             IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-            LogPrintf("Running BitcoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+            LogPrintf("Running MobicoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
                 ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
             //
@@ -441,14 +467,16 @@ void static BitcoinMiner(const CChainParams& chainparams)
                 // Check if something found
                 if (ScanHash(pblock, nNonce, &hash))
                 {
+                    //LogPrintf("MobicoinMiner found nNonce=%d hash=%s hashTarget=%s \n", nNonce, UintToArith256(hash) , hashTarget);
                     if (UintToArith256(hash) <= hashTarget)
                     {
+                        LogPrintf("MobicoinMiner nonce matches!\n");
                         // Found a solution
                         pblock->nNonce = nNonce;
                         assert(hash == pblock->GetHash());
 
                         SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                        LogPrintf("BitcoinMiner:\n");
+                        LogPrintf("MobicoinMiner:\n");
                         LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                         ProcessBlockFound(pblock, chainparams);
                         SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -460,6 +488,9 @@ void static BitcoinMiner(const CChainParams& chainparams)
 
                         break;
                     }
+
+
+                    LogPrintf("MobicoinMiner nonce dosn't match!\n");
                 }
 
                 // Check for stop or if block needs to be rebuilt
@@ -488,12 +519,12 @@ void static BitcoinMiner(const CChainParams& chainparams)
     }
     catch (const boost::thread_interrupted&)
     {
-        LogPrintf("BitcoinMiner terminated\n");
+        LogPrintf("MobicoinMiner terminated\n");
         throw;
     }
     catch (const std::runtime_error &e)
     {
-        LogPrintf("BitcoinMiner runtime error: %s\n", e.what());
+        LogPrintf("MobicoinMiner runtime error: %s\n", e.what());
         return;
     }
 }

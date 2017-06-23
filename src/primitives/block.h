@@ -67,6 +67,7 @@ public:
     {
         return (int64_t)nTime;
     }
+
 };
 
 
