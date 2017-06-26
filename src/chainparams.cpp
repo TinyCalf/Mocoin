@@ -123,6 +123,7 @@ public:
         // vSeeds.push_back(CDNSSeedData("xf2.org", "bitseed.xf2.org")); // Jeff Garzik
         // vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch")); // Jonas Schnelli
         vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
+        vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,43); //J Jonathan MBC
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,53); //N Jonathan MBC
