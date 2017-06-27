@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>740</width>
-    <height>430</height>
+    <height>516</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="tab_info">
       <attribute name="title">
@@ -185,17 +185,17 @@
         </widget>
        </item>
        <item row="7" column="0">
-           <widget class="QLabel" name="labelNetwork">
-               <property name="font">
-                   <font>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                   </font>
-               </property>
-               <property name="text">
-                   <string>Network</string>
-               </property>
-           </widget>
+        <widget class="QLabel" name="labelNetwork">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Network</string>
+         </property>
+        </widget>
        </item>
        <item row="8" column="0">
         <widget class="QLabel" name="label_8">
@@ -473,7 +473,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../bitcoin.qrc">
+            <iconset>
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1299,8 +1299,6 @@
    </slots>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="../bitcoin.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
