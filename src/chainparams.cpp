@@ -84,7 +84,7 @@ public:
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         
-        //consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         //consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         //consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 2199145601; // January 1, 2008
@@ -122,8 +122,13 @@ public:
         // vSeeds.push_back(CDNSSeedData("bitcoinstats.com", "seed.bitcoinstats.com")); // Christian Decker
         // vSeeds.push_back(CDNSSeedData("xf2.org", "bitseed.xf2.org")); // Jeff Garzik
         // vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch")); // Jonas Schnelli
-        vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
-        vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
+        // vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
+        // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
+        // vSeeds.push_back(CDNSSeedData("mbcnode1.chinacloudapp.cn", "mbcnode1.chinacloudapp.cn")); 
+
+        //Jonathan add these two sen to test, can be removed.
+        vFixedSeeds.clear();
+        vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,43); //J   MBC
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,53); //N Jonathan MBC
