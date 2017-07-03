@@ -77,7 +77,7 @@ public:
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.powLimit =  uint256S("0x0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 60 * 60 * 2; // two hour Jonathan MBC
-        consensus.nPowTargetSpacing = 1; //1second  5min Jonathan MBC
+        consensus.nPowTargetSpacing = 20; //20 second  5min Jonathan MBC
         consensus.fPowAllowMinDifficultyBlocks = !false; // Jonathan MBC
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016

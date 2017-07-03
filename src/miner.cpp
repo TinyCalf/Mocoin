@@ -359,7 +359,7 @@ bool static ScanHash(const CBlockHeader *pblock, uint32_t& nNonce, uint256 *phas
         //if (((uint16_t*)phash)[0] == 2) LogPrintf("phash[2] == 0 \n");
         //if (((uint16_t*)phash)[0] == 3) LogPrintf("phash[3] == 0 \n");
         //if (((uint16_t*)phash)[0] == 5) LogPrintf("phash[5] == 0 \n");
-        if (((uint16_t*)phash)[15] == 0) LogPrintf("phash[15] == 0 \n");
+        //if (((uint16_t*)phash)[15] == 0) LogPrintf("phash[15] == 0 \n");
         // else if (((uint16_t*)phash)[14] == 0) LogPrintf("phash[14] == 0 \n");
         // else if (((uint16_t*)phash)[13] == 0) LogPrintf("phash[13] == 0 \n");
         // else if (((uint16_t*)phash)[12] == 0) LogPrintf("phash[12] == 0 \n");
@@ -490,7 +490,7 @@ void static BitcoinMiner(const CChainParams& chainparams)
                     }
 
 
-                    LogPrintf("MobicoinMiner nonce dosn't match!\n");
+                    //LogPrintf("MobicoinMiner nonce dosn't match!\n");
                 }
 
                 // Check for stop or if block needs to be rebuilt
