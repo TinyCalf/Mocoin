@@ -1,0 +1,387 @@
+[
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/codecvt_error_category.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/codecvt_error_category.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/codecvt_error_category.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/operations.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/operations.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/operations.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/path.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/path_traits.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path_traits.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path_traits.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/portability.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/portability.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/portability.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/unique_path.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/unique_path.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/unique_path.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/utf8_codecvt_facet.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/utf8_codecvt_facet.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/utf8_codecvt_facet.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/windows_file_codecvt.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/windows_file_codecvt.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/windows_file_codecvt.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/converter/arg_to_python_base.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/arg_to_python_base.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/arg_to_python_base.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/converter/builtin_converters.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/builtin_converters.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/builtin_converters.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/converter/from_python.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/from_python.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/from_python.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/converter/registry.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/registry.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/registry.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/converter/type_id.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/type_id.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/converter/type_id.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/dict.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/dict.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/dict.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/errors.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/errors.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/errors.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/exec.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/exec.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/exec.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/import.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/import.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/import.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/list.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/list.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/list.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/long.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/long.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/long.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/module.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/module.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/module.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/numeric.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/numeric.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/numeric.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/class.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/class.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/class.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/enum.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/enum.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/enum.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/function.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/function.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/function.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/function_doc_signature.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/function_doc_signature.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/function_doc_signature.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/inheritance.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/inheritance.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/inheritance.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/iterator.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/iterator.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/iterator.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/life_support.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/life_support.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/life_support.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/pickle_support.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/pickle_support.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/pickle_support.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object/stl_iterator.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/stl_iterator.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object/stl_iterator.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object_operators.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object_operators.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object_operators.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/object_protocol.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object_protocol.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/object_protocol.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/slice.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/slice.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/slice.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/str.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/str.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/str.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/tuple.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/tuple.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/tuple.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/python/src/wrapper.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/wrapper.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/python/src/wrapper.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/BoostParts",
+  "command": "/usr/bin/c++   -DYCMD_CORE_VERSION=27 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -w -O3 -DNDEBUG   -std=c++11 -fPIC -o CMakeFiles/BoostParts.dir/libs/system/src/error_code.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/system/src/error_code.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/system/src/error_code.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/Candidate.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Candidate.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Candidate.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/CandidateRepository.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CandidateRepository.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CandidateRepository.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/ClangCompleter.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/ClangCompleter.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/ClangCompleter.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/ClangHelpers.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/ClangHelpers.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/ClangHelpers.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/ClangUtils.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/ClangUtils.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/ClangUtils.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/CompilationDatabase.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/CompilationDatabase.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/CompilationDatabase.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/CompletionData.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/CompletionData.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/CompletionData.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/Documentation.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/Documentation.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/Documentation.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/Range.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/Range.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/Range.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/TranslationUnit.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/TranslationUnit.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/TranslationUnit.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ClangCompleter/TranslationUnitStore.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/TranslationUnitStore.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter/TranslationUnitStore.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/IdentifierCompleter.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierCompleter.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierCompleter.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/IdentifierDatabase.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierDatabase.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierDatabase.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/IdentifierUtils.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierUtils.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierUtils.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/LetterNode.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/LetterNode.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/LetterNode.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/LetterNodeListMap.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/LetterNodeListMap.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/LetterNodeListMap.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/PythonSupport.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/PythonSupport.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/PythonSupport.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/Result.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Result.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Result.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/Utils.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Utils.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Utils.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/versioning.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/versioning.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/versioning.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -Dycm_core_EXPORTS -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/ycm_core.dir/ycm_core.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ycm_core.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ycm_core.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/CandidateRepository_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/CandidateRepository_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/CandidateRepository_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/Candidate_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/Candidate_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/Candidate_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/ClangCompleter/ClangCompleter_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/ClangCompleter/ClangCompleter_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/ClangCompleter/ClangCompleter_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/ClangCompleter/TranslationUnit_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/ClangCompleter/TranslationUnit_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/ClangCompleter/TranslationUnit_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/IdentifierCompleter_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IdentifierCompleter_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IdentifierCompleter_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/IdentifierUtils_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IdentifierUtils_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IdentifierUtils_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/IndexForLetter_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IndexForLetter_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IndexForLetter_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/IsUppercase_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IsUppercase_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/IsUppercase_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/LetterBitsetFromString_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/LetterBitsetFromString_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/LetterBitsetFromString_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/LetterNode_test.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/LetterNode_test.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/LetterNode_test.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/TestUtils.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/TestUtils.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/TestUtils.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include  -O3 -DNDEBUG   -std=c++11 -o CMakeFiles/ycm_core_tests.dir/main.cpp.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/main.cpp",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/main.cpp"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests/gmock",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest  -O3 -DNDEBUG   -std=c++11  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/gtest/src/gtest-all.cc.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest-all.cc",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests/gmock",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest  -O3 -DNDEBUG   -std=c++11  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/src/gmock-all.cc",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests/gmock",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest  -O3 -DNDEBUG   -std=c++11  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/src/gmock_main.cc",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests/gmock",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest  -O3 -DNDEBUG   -std=c++11  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/gtest/src/gtest-all.cc.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest-all.cc",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests/gmock",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest  -O3 -DNDEBUG   -std=c++11  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/src/gmock-all.cc",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests/gmock/gtest",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest  -O3 -DNDEBUG   -std=c++11  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest_main.cc",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/jonathan/desktop/Mocoin/ycm/tests/gmock/gtest",
+  "command": "/usr/bin/c++   -DUSE_CLANG_COMPLETER -DYCMD_CORE_VERSION=27 -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7 -isystem /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include -I/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest  -O3 -DNDEBUG   -std=c++11  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest-all.cc",
+  "file": "/home/jonathan/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/src/gtest-all.cc"
+}
+]

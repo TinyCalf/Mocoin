@@ -5,7 +5,6 @@
 
 #include "chainparams.h"
 #include "consensus/merkle.h"
-
 #include "tinyformat.h"
 #include "util.h"
 #include "utilstrencodings.h"
@@ -78,7 +77,7 @@ public:
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.powLimit =  uint256S("0x0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 60 * 60 * 2; // two hour Jonathan MBC
-        consensus.nPowTargetSpacing = 5 * 60; // 5min Jonathan MBC
+        consensus.nPowTargetSpacing = 1; //1second  5min Jonathan MBC
         consensus.fPowAllowMinDifficultyBlocks = !false; // Jonathan MBC
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
@@ -110,12 +109,15 @@ public:
         nDefaultPort = 10086; //Jonathan MBC
         nMaxTipAge = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
-
+ 
         genesis = CreateGenesisBlock(1411666331, 2056985438, 0x1d00ffff, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x0000000061b1aca334b059920fed7bace2336ea4d23d63428c7aee04da49e942"));
         assert(genesis.hashMerkleRoot == uint256S("0x7bf229f629a6666596c1ce57117c28d1d29299e8a5303347929bd70847c49adb"));
 
+        
+        vFixedSeeds.clear();
+        vSeeds.clear();
         // vSeeds.push_back(CDNSSeedData("bitcoin.sipa.be", "seed.bitcoin.sipa.be")); // Pieter Wuille
         // vSeeds.push_back(CDNSSeedData("bluematt.me", "dnsseed.bluematt.me")); // Matt Corallo
         // vSeeds.push_back(CDNSSeedData("dashjr.org", "dnsseed.bitcoin.dashjr.org")); // Luke Dashjr
@@ -124,11 +126,10 @@ public:
         // vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch")); // Jonas Schnelli
         // vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
         // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
-        // vSeeds.push_back(CDNSSeedData("mbcnode1.chinacloudapp.cn", "mbcnode1.chinacloudapp.cn")); 
+        vSeeds.push_back(CDNSSeedData("mbcnode1.chinacloudapp.cn", "mbcnode1.chinacloudapp.cn")); 
 
         //Jonathan add these two sen to test, can be removed.
-        vFixedSeeds.clear();
-        vSeeds.clear();
+        
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,43); //J   MBC
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,53); //N Jonathan MBC
