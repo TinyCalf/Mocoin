@@ -127,6 +127,7 @@ public:
         // vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
         // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
         vSeeds.push_back(CDNSSeedData("mbcnode1.chinacloudapp.cn", "mbcnode1.chinacloudapp.cn")); 
+        vSeeds.push_back(CDNSSeedData("dnsseed.tiny-calf.com", "dnsseed.tiny-calf.com")); 
 
         //Jonathan add these two sen to test, can be removed.
         
