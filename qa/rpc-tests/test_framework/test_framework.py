@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-# Copyright (c) 2014-2016 The Bitcoin Core developers
+#!/usr/bin/env python2
+# Copyright (c) 2014-2015 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,7 +26,7 @@ from .util import (
     check_json_precision,
     initialize_chain_clean,
 )
-from .authproxy import AuthServiceProxy, JSONRPCException
+from authproxy import AuthServiceProxy, JSONRPCException
 
 
 class BitcoinTestFramework(object):
@@ -140,10 +140,10 @@ class BitcoinTestFramework(object):
             print("JSONRPC error: "+e.error['message'])
             traceback.print_tb(sys.exc_info()[2])
         except AssertionError as e:
-            print("Assertion failed: " + str(e))
+            print("Assertion failed: "+e.message)
             traceback.print_tb(sys.exc_info()[2])
         except Exception as e:
-            print("Unexpected exception caught during testing: " + repr(e))
+            print("Unexpected exception caught during testing: "+str(e))
             traceback.print_tb(sys.exc_info()[2])
 
         if not self.options.noshutdown:
@@ -186,7 +186,7 @@ class ComparisonTestFramework(BitcoinTestFramework):
                           help="bitcoind binary to use for reference nodes (if any)")
 
     def setup_chain(self):
-        print("Initializing test directory "+self.options.tmpdir)
+        print "Initializing test directory "+self.options.tmpdir
         initialize_chain_clean(self.options.tmpdir, self.num_nodes)
 
     def setup_network(self):

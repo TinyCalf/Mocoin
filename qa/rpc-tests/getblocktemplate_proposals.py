@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-# Copyright (c) 2014-2016 The Bitcoin Core developers
+#!/usr/bin/env python2
+# Copyright (c) 2014-2015 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,6 +9,28 @@ from test_framework.util import *
 from binascii import a2b_hex, b2a_hex
 from hashlib import sha256
 from struct import pack
+
+
+def check_array_result(object_array, to_match, expected):
+    """
+    Pass in array of JSON objects, a dictionary with key/value pairs
+    to match against, and another dictionary with expected key/value
+    pairs.
+    """
+    num_matched = 0
+    for item in object_array:
+        all_match = True
+        for key,value in to_match.items():
+            if item[key] != value:
+                all_match = False
+        if not all_match:
+            continue
+        for key,value in expected.items():
+            if item[key] != value:
+                raise AssertionError("%s : expected %s=%s"%(str(item), str(key), str(value)))
+            num_matched = num_matched+1
+    if num_matched == 0:
+        raise AssertionError("No objects matched %s"%(str(to_match)))
 
 def b2x(b):
     return b2a_hex(b).decode('ascii')
@@ -46,7 +68,7 @@ def genmrklroot(leaflist):
         cur = n
     return cur[0]
 
-def template_to_bytearray(tmpl, txlist):
+def template_to_bytes(tmpl, txlist):
     blkver = pack('<L', tmpl['version'])
     mrklroot = genmrklroot(list(dblsha(a) for a in txlist))
     timestamp = pack('<L', tmpl['curtime'])
@@ -55,10 +77,10 @@ def template_to_bytearray(tmpl, txlist):
     blk += varlenEncode(len(txlist))
     for tx in txlist:
         blk += tx
-    return bytearray(blk)
+    return blk
 
 def template_to_hex(tmpl, txlist):
-    return b2x(template_to_bytearray(tmpl, txlist))
+    return b2x(template_to_bytes(tmpl, txlist))
 
 def assert_template(node, tmpl, txlist, expect):
     rsp = node.getblocktemplate({'data':template_to_hex(tmpl, txlist),'mode':'proposal'})
@@ -98,7 +120,10 @@ class GetBlockTemplateProposalTest(BitcoinTestFramework):
 
         # Test 3: Truncated final tx
         lastbyte = txlist[-1].pop()
-        assert_raises(JSONRPCException, assert_template, node, tmpl, txlist, 'n/a')
+        try:
+            assert_template(node, tmpl, txlist, 'n/a')
+        except JSONRPCException:
+            pass  # Expected
         txlist[-1].append(lastbyte)
 
         # Test 4: Add an invalid tx to the end (duplicate of gen tx)
@@ -108,7 +133,7 @@ class GetBlockTemplateProposalTest(BitcoinTestFramework):
 
         # Test 5: Add an invalid tx to the end (non-duplicate)
         txlist.append(bytearray(txlist[0]))
-        txlist[-1][4+1] = 0xff
+        txlist[-1][4+1] = b'\xff'
         assert_template(node, tmpl, txlist, 'bad-txns-inputs-missingorspent')
         txlist.pop()
 
@@ -119,7 +144,10 @@ class GetBlockTemplateProposalTest(BitcoinTestFramework):
 
         # Test 7: Bad tx count
         txlist.append(b'')
-        assert_raises(JSONRPCException, assert_template, node, tmpl, txlist, 'n/a')
+        try:
+            assert_template(node, tmpl, txlist, 'n/a')
+        except JSONRPCException:
+            pass  # Expected
         txlist.pop()
 
         # Test 8: Bad bits
@@ -129,7 +157,7 @@ class GetBlockTemplateProposalTest(BitcoinTestFramework):
         tmpl['bits'] = realbits
 
         # Test 9: Bad merkle root
-        rawtmpl = template_to_bytearray(tmpl, txlist)
+        rawtmpl = template_to_bytes(tmpl, txlist)
         rawtmpl[4+32] = (rawtmpl[4+32] + 1) % 0x100
         rsp = node.getblocktemplate({'data':b2x(rawtmpl),'mode':'proposal'})
         if rsp != 'bad-txnmrklroot':

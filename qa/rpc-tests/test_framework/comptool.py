@@ -1,11 +1,12 @@
-#!/usr/bin/env python3
-# Copyright (c) 2015-2016 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
+#!/usr/bin/env python2
+#
+# Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
+#
 
-from .mininode import *
-from .blockstore import BlockStore, TxStore
-from .util import p2p_port
+from mininode import *
+from blockstore import BlockStore, TxStore
+from util import p2p_port
 
 '''
 This is a tool for comparing two or more bitcoinds to each other
@@ -26,11 +27,25 @@ generator that returns TestInstance objects.  See below for definition.
 
 global mininode_lock
 
+def wait_until(predicate, attempts=float('inf'), timeout=float('inf')):
+    attempt = 0
+    elapsed = 0
+
+    while attempt < attempts and elapsed < timeout:
+        with mininode_lock:
+            if predicate():
+                return True
+        attempt += 1
+        elapsed += 0.05
+        time.sleep(0.05)
+
+    return False
+
 class RejectResult(object):
     '''
     Outcome that expects rejection of a transaction or block.
     '''
-    def __init__(self, code, reason=b''):
+    def __init__(self, code, reason=''):
         self.code = code
         self.reason = reason
     def match(self, other):
@@ -96,9 +111,9 @@ class TestNode(NodeConnCB):
             raise AssertionError("Got pong for unknown ping [%s]" % repr(message))
 
     def on_reject(self, conn, message):
-        if message.message == b'tx':
+        if message.message == 'tx':
             self.tx_reject_map[message.data] = RejectResult(message.code, message.reason)
-        if message.message == b'block':
+        if message.message == 'block':
             self.block_reject_map[message.data] = RejectResult(message.code, message.reason)
 
     def send_inv(self, obj):
@@ -258,10 +273,10 @@ class TestManager(object):
                     if c.cb.bestblockhash == blockhash:
                         return False
                     if blockhash not in c.cb.block_reject_map:
-                        print('Block not in reject map: %064x' % (blockhash))
+                        print 'Block not in reject map: %064x' % (blockhash)
                         return False
                     if not outcome.match(c.cb.block_reject_map[blockhash]):
-                        print('Block rejected with %s instead of expected %s: %064x' % (c.cb.block_reject_map[blockhash], outcome, blockhash))
+                        print 'Block rejected with %s instead of expected %s: %064x' % (c.cb.block_reject_map[blockhash], outcome, blockhash)
                         return False
                 elif ((c.cb.bestblockhash == blockhash) != outcome):
                     # print c.cb.bestblockhash, blockhash, outcome
@@ -286,10 +301,10 @@ class TestManager(object):
                     if txhash in c.cb.lastInv:
                         return False
                     if txhash not in c.cb.tx_reject_map:
-                        print('Tx not in reject map: %064x' % (txhash))
+                        print 'Tx not in reject map: %064x' % (txhash)
                         return False
                     if not outcome.match(c.cb.tx_reject_map[txhash]):
-                        print('Tx rejected with %s instead of expected %s: %064x' % (c.cb.tx_reject_map[txhash], outcome, txhash))
+                        print 'Tx rejected with %s instead of expected %s: %064x' % (c.cb.tx_reject_map[txhash], outcome, txhash)
                         return False
                 elif ((txhash in c.cb.lastInv) != outcome):
                     # print c.rpc.getrawmempool(), c.cb.lastInv
@@ -392,7 +407,7 @@ class TestManager(object):
                 if (not self.check_mempool(tx.sha256, tx_outcome)):
                     raise AssertionError("Mempool test failed at test %d" % test_number)
 
-            print("Test %d: PASS" % test_number, [ c.rpc.getblockcount() for c in self.connections ])
+            print "Test %d: PASS" % test_number, [ c.rpc.getblockcount() for c in self.connections ]
             test_number += 1
 
         [ c.disconnect_node() for c in self.connections ]

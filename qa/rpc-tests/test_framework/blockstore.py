@@ -1,17 +1,15 @@
-#!/usr/bin/env python3
 # BlockStore: a helper class that keeps a map of blocks and implements
 #             helper functions for responding to getheaders and getdata,
 #             and for constructing a getheaders message
 #
 
-from .mininode import *
-from io import BytesIO
-import dbm.ndbm
+from mininode import *
+import dbm
 
 class BlockStore(object):
     def __init__(self, datadir):
-        self.blockDB = dbm.ndbm.open(datadir + "/blocks", 'c')
-        self.currentBlock = 0
+        self.blockDB = dbm.open(datadir + "/blocks", 'c')
+        self.currentBlock = 0L
         self.headers_map = dict()
     
     def close(self):
@@ -23,7 +21,7 @@ class BlockStore(object):
             serialized_block = self.blockDB[repr(blockhash)]
         except KeyError:
             return None
-        f = BytesIO(serialized_block)
+        f = cStringIO.StringIO(serialized_block)
         ret = CBlock()
         ret.deserialize(f)
         ret.calc_sha256()
@@ -68,7 +66,7 @@ class BlockStore(object):
         try:
             self.blockDB[repr(block.sha256)] = bytes(block.serialize())
         except TypeError as e:
-            print("Unexpected error: ", sys.exc_info()[0], e.args)
+            print "Unexpected error: ", sys.exc_info()[0], e.args
         self.currentBlock = block.sha256
         self.headers_map[block.sha256] = CBlockHeader(block)
 
@@ -106,7 +104,7 @@ class BlockStore(object):
 
 class TxStore(object):
     def __init__(self, datadir):
-        self.txDB = dbm.ndbm.open(datadir + "/transactions", 'c')
+        self.txDB = dbm.open(datadir + "/transactions", 'c')
 
     def close(self):
         self.txDB.close()
@@ -117,7 +115,7 @@ class TxStore(object):
             serialized_tx = self.txDB[repr(txhash)]
         except KeyError:
             return None
-        f = BytesIO(serialized_tx)
+        f = cStringIO.StringIO(serialized_tx)
         ret = CTransaction()
         ret.deserialize(f)
         ret.calc_sha256()
@@ -128,7 +126,7 @@ class TxStore(object):
         try:
             self.txDB[repr(tx.sha256)] = bytes(tx.serialize())
         except TypeError as e:
-            print("Unexpected error: ", sys.exc_info()[0], e.args)
+            print "Unexpected error: ", sys.exc_info()[0], e.args
 
     def get_transactions(self, inv):
         responses = []

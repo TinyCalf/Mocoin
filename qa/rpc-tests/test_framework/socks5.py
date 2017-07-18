@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
-# Copyright (c) 2015-2016 The Bitcoin Core developers
+# Copyright (c) 2015 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
 Dummy Socks5 server for testing.
 '''
-
-import socket, threading, queue
+from __future__ import print_function, division, unicode_literals
+import socket, threading, Queue
 import traceback, sys
 
 ### Protocol constants
@@ -103,7 +102,7 @@ class Socks5Connection(object):
                 addr = recvall(self.conn, 4)
             elif atyp == AddressType.DOMAINNAME:
                 n = recvall(self.conn, 1)[0]
-                addr = recvall(self.conn, n)
+                addr = str(recvall(self.conn, n))
             elif atyp == AddressType.IPV6:
                 addr = recvall(self.conn, 16)
             else:
@@ -118,7 +117,7 @@ class Socks5Connection(object):
             self.serv.queue.put(cmdin)
             print('Proxy: ', cmdin)
             # Fall through to disconnect
-        except Exception as e:
+        except Exception,e:
             traceback.print_exc(file=sys.stderr)
             self.serv.queue.put(e)
         finally:
@@ -133,7 +132,7 @@ class Socks5Server(object):
         self.s.listen(5)
         self.running = False
         self.thread = None
-        self.queue = queue.Queue() # report connections and exceptions to client
+        self.queue = Queue.Queue() # report connections and exceptions to client
 
     def run(self):
         while self.running:
