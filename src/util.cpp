@@ -8,13 +8,13 @@
 #endif
 
 #include "util.h"
-
 #include "chainparamsbase.h"
 #include "random.h"
 #include "serialize.h"
 #include "sync.h"
 #include "utilstrencodings.h"
 #include "utiltime.h"
+#include "altcoinparams.h"
 
 #include <stdarg.h>
 
@@ -461,7 +461,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bitcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / DATA_FILE_NAME;
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -473,10 +473,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Bitcoin";
+    return pathRet / DATA_FILE_NAME;
 #else
     // Unix
-    return pathRet / ".bitcoin";
+    return pathRet / DATA_FILE_NAME_UNIX;
 #endif
 #endif
 }
