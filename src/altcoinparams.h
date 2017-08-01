@@ -23,17 +23,17 @@ Main Net
 const static int HALVING_INTERVAL =  100;
 const static int POW_TARGET_TIMESPAWN = 60 * 60 * 24 * 356 ;
 const static int POW_TARGET_SPACING = 2 * 60;
-const static bool POW_ALLOW_MIN_DIFFICULTY_BLOCKS = true;
+const static bool POW_ALLOW_MIN_DIFFICULTY_BLOCKS = false;
 const static int MESSAGE_START_0 = 0x90;
 const static int MESSAGE_START_1 = 0x0d;
 const static int MESSAGE_START_2 = 0x23;
 const static int MESSAGE_START_3 = 0x34;
 const static int DEFAULT_PORT = 19939;
 const static int NTIME =  1500501600;
-const static int NNOUNCE = 1065607915;
+const static int NNOUNCE = 925523;
 const static int NBITS = 0x1e00ffff;
 const static int NREWORD = 100;
-const static char* HASH_GENESIS_BLOCK = "0x000000ceff2fd2bfde81020afa84ea6f52fc37cc3b764785908e31aa16ce5568";
+const static char* HASH_GENESIS_BLOCK = "0x0000006b4cafc029372386260da77007bfb19f71c72d887b3aaae0165eafcb7b";
 const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462";
 /*TODO: DNSSEEDS*/
 const static int PUBKEY_ADDRESS = 44;
