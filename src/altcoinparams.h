@@ -20,9 +20,9 @@ Main Net
 */
 
 /*chainparams.cpp*/
-const static int HALVING_INTERVAL =  50000000;
+const static int HALVING_INTERVAL =  10;
 const static int POW_TARGET_TIMESPAWN = 60 * 60 * 2;
-const static int POW_TARGET_SPACING = 20;
+const static int POW_TARGET_SPACING = 2;
 const static bool POW_ALLOW_MIN_DIFFICULTY_BLOCKS = true;
 const static int MESSAGE_START_0 = 0x90;
 const static int MESSAGE_START_1 = 0x0d;
@@ -47,7 +47,7 @@ const static char* POW_LIMIT = "0x0000ffffffffffffffffffffffffffffffffffffffffff
 const static int ALT_COINBASE_MATURITY =3;
 
 /*main.cpp*/
-const static int REWORD_OF_MINING = 1000;
+const static int REWORD_OF_MINING = 2500000;
 
 /*util.h*/
 // directory name  named after the altcoin
