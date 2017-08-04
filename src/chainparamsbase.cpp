@@ -7,6 +7,7 @@
 
 #include "tinyformat.h"
 #include "util.h"
+#include "altcoinparams.h"
 
 #include <assert.h>
 
@@ -32,7 +33,7 @@ class CBaseMainParams : public CBaseChainParams
 public:
     CBaseMainParams()
     {
-        nRPCPort = 8332;
+        nRPCPort = RPC_PORT;
     }
 };
 static CBaseMainParams mainParams;

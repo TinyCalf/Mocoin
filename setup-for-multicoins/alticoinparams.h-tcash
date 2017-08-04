@@ -39,7 +39,10 @@ const static int NREWORD = 100;
 //const static char* HASH_GENESIS_BLOCK = "0x0000006b4cafc029372386260da77007bfb19f71c72d887b3aaae0165eafcb7b";
 const static char* HASH_GENESIS_BLOCK = "0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa";
 const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462";
-/*TODO: DNSSEEDS*/
+/*DNSSEEDS*/
+const static char*DNSSEEDS1= "120.92.35.170";
+const static char*DNSSEEDS2="120.92.35.170";
+
 const static int PUBKEY_ADDRESS = 44;
 const static int SCRIPT_ADDRESS = 54;
 const static int SECRET_KEY = 66;
@@ -59,5 +62,7 @@ const static char* DATA_FILE_NAME =  "Tcash";
 const static char* DATA_FILE_NAME_UNIX =  ".tcash";
 
 /*TODO:qt default data path*/
+
+const static int RPC_PORT =  19938;
 
 #endif // BITCOIN_ALTCOINPARAMS_H

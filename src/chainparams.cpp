@@ -16,6 +16,7 @@
 #include "altcoinparams.h"
 
 #include "chainparamsseeds.h"
+using namespace std;
 
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
@@ -120,6 +121,10 @@ public:
         
         vFixedSeeds.clear();
         vSeeds.clear();
+
+       
+
+
         // vSeeds.push_back(CDNSSeedData("bitcoin.sipa.be", "seed.bitcoin.sipa.be")); // Pieter Wuille
         // vSeeds.push_back(CDNSSeedData("bluematt.me", "dnsseed.bluematt.me")); // Matt Corallo
         // vSeeds.push_back(CDNSSeedData("dashjr.org", "dnsseed.bitcoin.dashjr.org")); // Luke Dashjr
@@ -128,10 +133,8 @@ public:
         // vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch")); // Jonas Schnelli
         // vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
         // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
-        // vSeeds.push_back(CDNSSeedData("mbcnode1.chinacloudapp.cn", "mbcnode1.chinacloudapp.cn")); 
-        // vSeeds.push_back(CDNSSeedData("dnsseed.tiny-calf.com", "dnsseed.tiny-calf.com")); 
-
-        //Jonathan add these two sen to test, can be removed.
+        vSeeds.push_back(CDNSSeedData(DNSSEEDS1, DNSSEEDS1)); 
+        vSeeds.push_back(CDNSSeedData(DNSSEEDS2, DNSSEEDS2)); 
         
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,PUBKEY_ADDRESS); //J   MBC
