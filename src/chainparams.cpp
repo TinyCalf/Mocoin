@@ -135,11 +135,17 @@ public:
         // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
         vSeeds.push_back(CDNSSeedData(DNSSEEDS1, DNSSEEDS1)); 
         vSeeds.push_back(CDNSSeedData(DNSSEEDS2, DNSSEEDS2)); 
-        
-
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,PUBKEY_ADDRESS); //J   MBC
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,SCRIPT_ADDRESS); //N Jonathan MBC
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,SECRET_KEY); //T Jonathan MBC
+        LogPrintf("PUBKEY_ADDRESS %d \n",nPUBKEY_ADDRESS);
+        LogPrintf("SCRIPT_ADDRESS %d \n",nSCRIPT_ADDRESS);
+        LogPrintf("SECRET_KEY %d \n",nSECRET_KEY);
+        LogPrintf("MESSAGE_START_0 %d \n",MESSAGE_START_0);
+        LogPrintf("MESSAGE_START_1 %d \n",MESSAGE_START_1);
+        LogPrintf("MESSAGE_START_2 %d \n",MESSAGE_START_2);
+        LogPrintf("MESSAGE_START_3 %d \n",MESSAGE_START_3);
+         
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,nPUBKEY_ADDRESS); //J   MBC
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,nSCRIPT_ADDRESS); //N Jonathan MBC
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,nSECRET_KEY); //T Jonathan MBC
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >(); //Jonathan MBC
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >(); //Jonathan MBC
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
