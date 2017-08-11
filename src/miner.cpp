@@ -4,7 +4,6 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "miner.h"
-
 #include "amount.h"
 #include "chain.h"
 #include "chainparams.h"
@@ -24,7 +23,6 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
-
 #include <boost/thread.hpp>
 #include <boost/tuple/tuple.hpp>
 #include <queue>

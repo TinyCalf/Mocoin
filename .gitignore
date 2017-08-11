@@ -117,3 +117,5 @@ libbitcoinconsensus.pc
 wallet-utility
 
 /unix-release-for-multicoins/rls-*/
+/unix-release-for-multicoins/rls-*
+

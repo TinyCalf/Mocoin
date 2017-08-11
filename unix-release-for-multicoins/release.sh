@@ -42,6 +42,7 @@ echo "copying template..." && \
 cp -rf ./template ./rls-${name} &&\
 cp -rf ../src/bitcoind ./rls-${name}/bin/${name}d &&\
 cp -rf ../src/bitcoin-cli ./rls-${name}/bin/${name}-cli &&\
+zip -r rls-${name}-`date --iso-8601`.zip ./rls-${name}/ && \
 echo "succeed release ${name}!"
 
 
