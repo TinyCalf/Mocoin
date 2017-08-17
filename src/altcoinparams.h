@@ -31,21 +31,20 @@ const static int MESSAGE_START_3 = 0x34;
 const static int DEFAULT_PORT = 19939;
 
 const static int NTIME =  1500501600;
-//const static int NNOUNCE = 925523;
 const static int NNOUNCE = 57739874;
-///const static int NBITS = 0x1e00ffff;
 const static int NBITS = 0x1d0fffff;
 const static int NREWORD = 100;
-//const static char* HASH_GENESIS_BLOCK = "0x0000006b4cafc029372386260da77007bfb19f71c72d887b3aaae0165eafcb7b";
 const static char* HASH_GENESIS_BLOCK = "0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa";
 const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462";
 /*DNSSEEDS*/
-const static char*DNSSEEDS1= "120.92.35.170";
-const static char*DNSSEEDS2="120.92.35.170";
+//const static char*DNSSEEDS1= "120.92.35.170";
+//const static char*DNSSEEDS2="120.92.35.170";
+const static char*DNSSEEDS1= "127.0.0.1";
+const static char*DNSSEEDS2="127.0.0.1";
 
-const static int nPUBKEY_ADDRESS = 0;
-const static int nSCRIPT_ADDRESS = 1;
-const static int nSECRET_KEY = 2;
+const static int nPUBKEY_ADDRESS = 44;
+const static int nSCRIPT_ADDRESS = 54;
+const static int nSECRET_KEY = 66;
 const static bool MINING_REQUIRES_PEERS = false;
 const static char* POW_LIMIT = "0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 /*TODO: CHECKPOINTS*/
@@ -54,7 +53,7 @@ const static char* POW_LIMIT = "0x0000000fffffffffffffffffffffffffffffffffffffff
 const static int ALT_COINBASE_MATURITY =3;
 
 /*main.cpp*/
-const static int REWORD_OF_MINING = 270000;
+const static int REWORD_OF_MINING = 251257;
 
 /*util.h*/
 // directory name  named after the altcoin

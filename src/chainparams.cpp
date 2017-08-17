@@ -133,8 +133,10 @@ public:
         // vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch")); // Jonas Schnelli
         // vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
         // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
-        vSeeds.push_back(CDNSSeedData(DNSSEEDS1, DNSSEEDS1)); 
-        vSeeds.push_back(CDNSSeedData(DNSSEEDS2, DNSSEEDS2)); 
+        vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223")); 
+        vSeeds.push_back(CDNSSeedData("120.92.44.149", "120.92.44.149")); 
+        vSeeds.push_back(CDNSSeedData("139.219.239.47", "139.219.239.47")); 
+        vSeeds.push_back(CDNSSeedData("120.92.91.36", "120.92.91.36")); 
         LogPrintf("PUBKEY_ADDRESS %d \n",nPUBKEY_ADDRESS);
         LogPrintf("SCRIPT_ADDRESS %d \n",nSCRIPT_ADDRESS);
         LogPrintf("SECRET_KEY %d \n",nSECRET_KEY);
