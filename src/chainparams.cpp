@@ -133,17 +133,11 @@ public:
         // vSeeds.push_back(CDNSSeedData("bitcoin.jonasschnelli.ch", "seed.bitcoin.jonasschnelli.ch")); // Jonas Schnelli
         // vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
         // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
-        vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223")); 
+        
+       vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223")); 
         vSeeds.push_back(CDNSSeedData("120.92.44.149", "120.92.44.149")); 
         vSeeds.push_back(CDNSSeedData("139.219.239.47", "139.219.239.47")); 
         vSeeds.push_back(CDNSSeedData("120.92.91.36", "120.92.91.36")); 
-        LogPrintf("PUBKEY_ADDRESS %d \n",nPUBKEY_ADDRESS);
-        LogPrintf("SCRIPT_ADDRESS %d \n",nSCRIPT_ADDRESS);
-        LogPrintf("SECRET_KEY %d \n",nSECRET_KEY);
-        LogPrintf("MESSAGE_START_0 %d \n",MESSAGE_START_0);
-        LogPrintf("MESSAGE_START_1 %d \n",MESSAGE_START_1);
-        LogPrintf("MESSAGE_START_2 %d \n",MESSAGE_START_2);
-        LogPrintf("MESSAGE_START_3 %d \n",MESSAGE_START_3);
          
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,nPUBKEY_ADDRESS); //J   MBC
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,nSCRIPT_ADDRESS); //N Jonathan MBC
