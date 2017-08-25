@@ -1,3 +1,4 @@
+src/qt/Bitcoin.*
 db*
 *.tar.gz
 
