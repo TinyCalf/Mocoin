@@ -39,8 +39,6 @@ const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f
 /*DNSSEEDS*/
 //const static char*DNSSEEDS1= "120.92.35.170";
 //const static char*DNSSEEDS2="120.92.35.170";
-const static char*DNSSEEDS1= "127.0.0.1";
-const static char*DNSSEEDS2="127.0.0.1";
 
 const static int nPUBKEY_ADDRESS = 44;
 const static int nSCRIPT_ADDRESS = 54;
