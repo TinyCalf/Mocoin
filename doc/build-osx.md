@@ -24,7 +24,7 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Bitcoin Core
+Build Ebocoin Core
 ------------------------
 
 1. Clone the bitcoin source code and cd into `bitcoin`
@@ -53,7 +53,7 @@ Build Bitcoin Core
 Running
 -------
 
-Bitcoin Core is now available at `./src/bitcoind`
+Ebocoin Core is now available at `./src/bitcoind`
 
 Before running, it's recommended you create an RPC configuration file.
 

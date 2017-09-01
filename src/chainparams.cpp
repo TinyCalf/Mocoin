@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2016 The Ebocoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -131,8 +131,8 @@ public:
         vSeeds.emplace_back("120.92.118.219", true); //Jonathan 节点5
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,36);//Jonathan PUBKEY_ADDRESS
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,39);//Jonathan SCRIPT_ADDRESS
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,37);//Jonathan SECRET_KEY
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,37);//Jonathan SCRIPT_ADDRESS
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,39);//Jonathan SECRET_KEY
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
@@ -160,13 +160,13 @@ public:
         //     }
         // };//Jonathan CheckPoint 可以暂时不加
 
-        chainTxData = ChainTxData{
-            // Data as of block 000000000000000000d97e53664d17967bd4ee50b23abb92e54a34eb222d15ae (height 478913).
-            1501801925, // * UNIX timestamp of last known number of transactions
-            243756039,  // * total number of transactions between genesis and that timestamp
-                        //   (the tx=... number in the SetBestChain debug.log lines)
-            3.1         // * estimated number of transactions per second after that timestamp
-        };
+        // chainTxData = ChainTxData{
+        //     // Data as of block 000000000000000000d97e53664d17967bd4ee50b23abb92e54a34eb222d15ae (height 478913).
+        //     1501801925, // * UNIX timestamp of last known number of transactions
+        //     243756039,  // * total number of transactions between genesis and that timestamp
+        //                 //   (the tx=... number in the SetBestChain debug.log lines)
+        //     3.1         // * estimated number of transactions per second after that timestamp
+        // };
     }
 };
 
