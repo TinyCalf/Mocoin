@@ -79,7 +79,7 @@ public:
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.BIP65Height = 388381; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 363725; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
-        consensus.powLimit = uint256S("0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");//Jonathan 最小难度限制
+        consensus.powLimit = uint256S("0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");//Jonathan 最小难度限制
         consensus.nPowTargetTimespan = 60 * 60 * 24 * 365; //Jonathan 难度周期
         consensus.nPowTargetSpacing = 2 * 60; //Jonathan 块生成速度估算值
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -101,10 +101,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 2510704000; //Jonathan 暂时未知其具体影响，改大一点避免问题
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000723d3581fe1bd55373540a");
+        //consensus.nMinimumChainWork = uint256S("0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a"); //477890
+        //consensus.defaultAssumeValid = uint256S("0x0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a"); //477890
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -121,14 +121,16 @@ public:
         genesis = CreateGenesisBlock(1503995185, 33327120, 0x1d0fffff, 1, 100 * COIN);//Jonathan 创世块的 时间戳/随机数/难度/Version（不变）/回报
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0000000d42baca7fd3cbaff62578cb1de20e48fb26a5083d8d6b9ea631f32a7a"));//Jonathan 创世块哈系值
-        assert(genesis.hashMerkleRoot == uint256S("0583fa232455f218e718d3618219adad4657b5e13e58197490e025d818fcc965"));//Jonathan 树形结构哈系值
+        assert(genesis.hashMerkleRoot == uint256S("0x0583fa232455f218e718d3618219adad4657b5e13e58197490e025d818fcc965"));//Jonathan 树形结构哈系值
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("42.159.249.223", true);//Jonathan 节点1
-        vSeeds.emplace_back("120.92.44.149", true);//Jonathan 节点2
-        vSeeds.emplace_back("139.219.239.47", true); //Jonathan 节点3
-        vSeeds.emplace_back("120.92.91.36", true); //Jonathan 节点4
-        vSeeds.emplace_back("120.92.118.219", true); //Jonathan 节点5
+        vSeeds.emplace_back("42.159.249.223", false);//Jonathan 节点1
+        vSeeds.emplace_back("120.92.44.149", false);//Jonathan 节点2
+        vSeeds.emplace_back("139.219.239.47", false); //Jonathan 节点3
+        vSeeds.emplace_back("120.92.91.36", false); //Jonathan 节点4
+        vSeeds.emplace_back("120.92.118.219", false); //Jonathan 节点5
+
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,36);//Jonathan PUBKEY_ADDRESS
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,37);//Jonathan SCRIPT_ADDRESS
@@ -136,7 +138,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
+        //vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
@@ -162,11 +164,11 @@ public:
 
         // chainTxData = ChainTxData{
         //     // Data as of block 000000000000000000d97e53664d17967bd4ee50b23abb92e54a34eb222d15ae (height 478913).
-        //     1501801925, // * UNIX timestamp of last known number of transactions
-        //     243756039,  // * total number of transactions between genesis and that timestamp
+        //     1503995185, // * UNIX timestamp of last known number of transactions
+        //     0,  // * total number of transactions between genesis and that timestamp
         //                 //   (the tx=... number in the SetBestChain debug.log lines)
-        //     3.1         // * estimated number of transactions per second after that timestamp
-        // };
+        //     2         // * estimated number of transactions per second after that timestamp
+        // };//Jonathan 暂时改成创世块的信息
     }
 };
 
@@ -185,7 +187,7 @@ public:
         consensus.powLimit = uint256S("0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");//Jonathan 测试网最小难度限制
         consensus.nPowTargetTimespan = 60 * 60 * 24 * 365; //Jonathan 测试网难度周期
         consensus.nPowTargetSpacing = 2 * 60; //Jonathan 测试网块生成速度估算值
-        consensus.fPowAllowMinDifficultyBlocks = true;
+        consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
@@ -226,7 +228,10 @@ public:
         // nodes with support for servicebits filtering should be at the top
         // vSeeds.emplace_back("testnet-seed.bitcoin.jonasschnelli.ch", true);
         // vSeeds.emplace_back("seed.tbtc.petertodd.org", true);
+        // vSeeds.emplace_back("testnet-seed.bluematt.me", false);vSeeds.emplace_back("testnet-seed.bitcoin.jonasschnelli.ch", true);
+        // vSeeds.emplace_back("seed.tbtc.petertodd.org", true);
         // vSeeds.emplace_back("testnet-seed.bluematt.me", false);
+        // vSeeds.emplace_back("testnet-seed.bitcoin.schildbach.de", false);
         // vSeeds.emplace_back("testnet-seed.bitcoin.schildbach.de", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
