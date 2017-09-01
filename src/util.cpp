@@ -528,7 +528,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bitcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Ebocoin";//Jonathan Win默认路径名称
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -538,10 +538,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Bitcoin";
+    return pathRet / "Library/Application Support/Ebocoin";//Jonathan Mac默认路径名称
 #else
     // Unix
-    return pathRet / ".bitcoin";
+    return pathRet / ".ebocoin";//Jonathan Linux默认路径名称
 #endif
 #endif
 }
