@@ -1123,7 +1123,7 @@
 </translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
+        <source>Tcash Core</source>
         <translation>Núcleo de Bitcoin</translation>
     </message>
     <message>

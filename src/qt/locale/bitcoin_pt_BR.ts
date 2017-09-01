@@ -3054,8 +3054,8 @@
         <translation>Não foi possível iniciar o servidor HTTP. Veja o log para detaihes.</translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
-        <translation>Ebocoin Core</translation>
+        <source>Tcash Core</source>
+        <translation>Tcash Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

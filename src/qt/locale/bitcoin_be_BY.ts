@@ -1258,8 +1258,8 @@
         <translation>Запусціць у фоне як дэман і прымаць каманды</translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
-        <translation>Ebocoin Core</translation>
+        <source>Tcash Core</source>
+        <translation>Tcash Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

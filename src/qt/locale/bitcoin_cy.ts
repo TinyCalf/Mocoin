@@ -484,7 +484,7 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
+        <source>Tcash Core</source>
         <translation>Craidd Bitcoin</translation>
     </message>
     <message>

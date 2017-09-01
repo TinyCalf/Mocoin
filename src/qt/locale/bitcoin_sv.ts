@@ -3003,8 +3003,8 @@ Var vänlig och försök igen.</translation>
         <translation>Kunde inte starta HTTP-server. Se avlusningsloggen för detaljer.</translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
-        <translation>Ebocoin Core</translation>
+        <source>Tcash Core</source>
+        <translation>Tcash Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

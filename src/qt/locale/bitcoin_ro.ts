@@ -748,8 +748,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ebocoin Core</source>
-        <translation>Ebocoin Core</translation>
+        <source>Tcash Core</source>
+        <translation>Tcash Core</translation>
     </message>
     <message>
         <source>Information</source>

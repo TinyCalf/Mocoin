@@ -3054,7 +3054,7 @@
         <translation>HTTP sunucusu başlatılamadı. Ayrıntılar için debug.log dosyasına bakınız.</translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
+        <source>Tcash Core</source>
         <translation>Bitcoin Çekirdeği</translation>
     </message>
     <message>

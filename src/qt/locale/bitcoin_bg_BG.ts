@@ -420,7 +420,7 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ebocoin Core</source>
+        <source>Tcash Core</source>
         <translation>Биткойн ядро</translation>
     </message>
     </context>

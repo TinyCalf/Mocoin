@@ -2937,8 +2937,8 @@
         <translation>No se ha podido comenzar el servidor HTTP. Ver debug log para detalles.</translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
-        <translation>Ebocoin Core</translation>
+        <source>Tcash Core</source>
+        <translation>Tcash Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

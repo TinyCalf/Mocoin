@@ -608,7 +608,7 @@
         <translation>Opciones:</translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
+        <source>Tcash Core</source>
         <translation>nucleo Bitcoin</translation>
     </message>
     <message>

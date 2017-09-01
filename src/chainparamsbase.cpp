@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2015 The Ebocoin Core developers
+// Copyright (c) 2009-2015 The Tcash Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,7 +32,7 @@ class CBaseMainParams : public CBaseChainParams
 public:
     CBaseMainParams()
     {
-        nRPCPort = 25534;//Jonathan 主网RPC端口
+        nRPCPort = 19938;//Jonathan 主网RPC端口
     }
 };
 
@@ -44,7 +44,7 @@ class CBaseTestNetParams : public CBaseChainParams
 public:
     CBaseTestNetParams()
     {
-        nRPCPort = 35534;//Jonathan 测试网RPC端口
+        nRPCPort = 29938;//Jonathan 测试网RPC端口
         strDataDir = "testnet3";
     }
 };
@@ -57,7 +57,7 @@ class CBaseRegTestParams : public CBaseChainParams
 public:
     CBaseRegTestParams()
     {
-        nRPCPort = 35534;//Jonathan 测试网RPC端口
+        nRPCPort = 29938;//Jonathan 测试网RPC端口
         strDataDir = "regtest";
     }
 };

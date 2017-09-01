@@ -708,7 +708,7 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ebocoin Core</source>
+        <source>Tcash Core</source>
         <translation>Bitcoin மையம்</translation>
     </message>
     <message>

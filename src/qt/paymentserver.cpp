@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Ebocoin Core developers
+// Copyright (c) 2011-2016 The Tcash Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -78,7 +78,7 @@ namespace // Anon namespace
 //
 static QString ipcServerName()
 {
-    QString name("EbocoinQt");//Jonathan
+    QString name("TcashQt");//Jonathan
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path

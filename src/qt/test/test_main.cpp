@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2016 The Ebocoin Core developers
+// Copyright (c) 2009-2016 The Tcash Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
     // Don't remove this, it's needed to access
     // QApplication:: and QCoreApplication:: in the tests
     QApplication app(argc, argv);
-    app.setApplicationName("Ebocoin-Qt-test");
+    app.setApplicationName("Tcash-Qt-test");
 
     SSL_library_init();
 

@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Ebocoin Core developers
+// Copyright (c) 2009-2016 The Tcash Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,7 +48,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "This is the beginning,2017,08,29"; //Jonathan 这里是创世块时间戳说明
+    const char* pszTimestamp = "Chester Bennington committed suicide on 20th July., 2017"; //Jonathan 这里是创世块时间戳说明
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -111,17 +111,17 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x81;//Jonathan 消息头0
-        pchMessageStart[1] = 0x1d;//Jonathan 消息头1
-        pchMessageStart[2] = 0x25;//Jonathan 消息头2
-        pchMessageStart[3] = 0x35;//Jonathan 消息头3
-        nDefaultPort = 25535;//Jonathan 默认端口
+        pchMessageStart[0] = 0x90;//Jonathan 消息头0
+        pchMessageStart[1] = 0x0d;//Jonathan 消息头1
+        pchMessageStart[2] = 0x23;//Jonathan 消息头2
+        pchMessageStart[3] = 0x34;//Jonathan 消息头3
+        nDefaultPort = 19939;//Jonathan 默认端口
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1503995185, 33327120, 0x1d0fffff, 1, 100 * COIN);//Jonathan 创世块的 时间戳/随机数/难度/Version（不变）/回报
+        genesis = CreateGenesisBlock(1500501600, 57739874, 0x1d0fffff, 1, 100 * COIN);//Jonathan 创世块的 时间戳/随机数/难度/Version（不变）/回报
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0000000d42baca7fd3cbaff62578cb1de20e48fb26a5083d8d6b9ea631f32a7a"));//Jonathan 创世块哈系值
-        assert(genesis.hashMerkleRoot == uint256S("0x0583fa232455f218e718d3618219adad4657b5e13e58197490e025d818fcc965"));//Jonathan 树形结构哈系值
+        assert(consensus.hashGenesisBlock == uint256S("0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa"));//Jonathan 创世块哈系值
+        assert(genesis.hashMerkleRoot == uint256S("0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462"));//Jonathan 树形结构哈系值
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.emplace_back("42.159.249.223", false);//Jonathan 节点1
@@ -132,9 +132,9 @@ public:
 
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,36);//Jonathan PUBKEY_ADDRESS
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,37);//Jonathan SCRIPT_ADDRESS
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,39);//Jonathan SECRET_KEY
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,44);//Jonathan PUBKEY_ADDRESS
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,54);//Jonathan SCRIPT_ADDRESS
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,66);//Jonathan SECRET_KEY
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
@@ -184,7 +184,7 @@ public:
         consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8");
         consensus.BIP65Height = 581885; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
         consensus.BIP66Height = 330776; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
-        consensus.powLimit = uint256S("0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");//Jonathan 测试网最小难度限制
+        consensus.powLimit = uint256S("0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");//Jonathan 测试网最小难度限制
         consensus.nPowTargetTimespan = 60 * 60 * 24 * 365; //Jonathan 测试网难度周期
         consensus.nPowTargetSpacing = 2 * 60; //Jonathan 测试网块生成速度估算值
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -218,10 +218,10 @@ public:
         nDefaultPort = 18333;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1503995185, 33327120, 0x1d0fffff, 1, 100 * COIN);//Jonathan 测试网创世块的 时间戳/随机数/难度/Version（不变）/回报
+        genesis = CreateGenesisBlock(1500501600, 57739874, 0x1d0fffff, 1, 100 * COIN);//Jonathan 测试网创世块的 时间戳/随机数/难度/Version（不变）/回报
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0000000d42baca7fd3cbaff62578cb1de20e48fb26a5083d8d6b9ea631f32a7a"));//Jonathan 测试网创世块哈系值
-        assert(genesis.hashMerkleRoot == uint256S("0583fa232455f218e718d3618219adad4657b5e13e58197490e025d818fcc965"));//Jonathan 测试网创世块哈系值
+        assert(consensus.hashGenesisBlock == uint256S("0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa"));//Jonathan 测试网创世块哈系值
+        assert(genesis.hashMerkleRoot == uint256S("0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462"));//Jonathan 测试网创世块哈系值
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -305,10 +305,10 @@ public:
         nDefaultPort = 18444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1503995185, 33327120, 0x1d0fffff, 1, 100 * COIN);//Jonathan 创世块的 时间戳/随机数/难度/Version（不变）/回报
+        genesis = CreateGenesisBlock(1500501600, 57739874, 0x1d0fffff, 1, 100 * COIN);//Jonathan 创世块的 时间戳/随机数/难度/Version（不变）/回报
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0000000d42baca7fd3cbaff62578cb1de20e48fb26a5083d8d6b9ea631f32a7a"));//Jonathan 测试网创世块哈系值
-        assert(genesis.hashMerkleRoot == uint256S("0583fa232455f218e718d3618219adad4657b5e13e58197490e025d818fcc965"));//Jonathan 测试网创世块哈系值
+        assert(consensus.hashGenesisBlock == uint256S("0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa"));//Jonathan 测试网创世块哈系值
+        assert(genesis.hashMerkleRoot == uint256S("0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462"));//Jonathan 测试网创世块哈系值
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.

@@ -772,7 +772,7 @@
 </translation>
     </message>
     <message>
-        <source>Ebocoin Core</source>
+        <source>Tcash Core</source>
         <translation>bitcoin core</translation>
     </message>
     <message>
