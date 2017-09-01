@@ -231,7 +231,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin Core</translation>
+        <translation>Ebocoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -561,7 +561,7 @@
     </message>
     <message>
         <source>PNG Image (*.png)</source>
-        <translation>PNG Картинка (*.png)</translation>
+        <translation>PNG Картинка (*.png)</translation>
     </message>
 </context>
 <context>
@@ -832,8 +832,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Ebocoin Core</source>
+        <translation>Ebocoin Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>

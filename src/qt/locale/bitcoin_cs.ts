@@ -3058,8 +3058,8 @@
         <translation>Nemohu spustit HTTP server. Detaily viz v debug.log.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Ebocoin Core</source>
+        <translation>Ebocoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

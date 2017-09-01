@@ -1594,7 +1594,7 @@
         <translation>Rulează în fundal ca un demon şi acceptă comenzi</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Ebocoin Core</source>
         <translation>Nucleul Bitcoin</translation>
     </message>
     <message>

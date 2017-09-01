@@ -784,7 +784,7 @@
         <translation>Opsionet:</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Ebocoin Core</source>
         <translation>Berthama Bitcoin</translation>
     </message>
     <message>

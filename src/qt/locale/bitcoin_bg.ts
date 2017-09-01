@@ -2370,7 +2370,7 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Ebocoin Core</source>
         <translation>Биткойн ядро</translation>
     </message>
     <message>

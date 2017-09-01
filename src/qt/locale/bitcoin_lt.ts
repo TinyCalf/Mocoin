@@ -936,7 +936,7 @@
         <translation>Dirbti fone kaip šešėlyje ir priimti komandas</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Ebocoin Core</source>
         <translation>Bitcoin branduolys</translation>
     </message>
     <message>

@@ -1,3 +1,8 @@
+src/qt/*.user
+src/qt/*.config
+src/qt/*.creator
+src/qt/*.files
+src/qt/*.includes
 db*
 *.tar.gz
 

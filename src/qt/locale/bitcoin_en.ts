@@ -4066,8 +4066,8 @@
     </message>
     <message>
         <location line="-386"/>
-        <source>Bitcoin Core</source>
-        <translation type="unfinished">Bitcoin Core</translation>
+        <source>Ebocoin Core</source>
+        <translation type="unfinished">Ebocoin Core</translation>
     </message>
     <message>
         <location line="+1"/>
