@@ -1,4 +1,4 @@
-Ebocoin Core integration/staging tree
+Tcash Core integration/staging tree
 =====================================
 
 [![Build Status](https://travis-ci.org/bitcoin/bitcoin.svg?branch=master)](https://travis-ci.org/bitcoin/bitcoin)
@@ -11,17 +11,17 @@ What is Bitcoin?
 Bitcoin is an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Ebocoin Core is the name of open source
+out collectively by the network. Tcash Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Ebocoin Core software, see https://bitcoin.org/en/download, or read the
+the Tcash Core software, see https://bitcoin.org/en/download, or read the
 [original whitepaper](https://bitcoincore.org/bitcoin.pdf).
 
 License
 -------
 
-Ebocoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Tcash Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -29,7 +29,7 @@ Development Process
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
-regularly to indicate new official, stable release versions of Ebocoin Core.
+regularly to indicate new official, stable release versions of Tcash Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -71,7 +71,7 @@ Translations
 ------------
 
 Changes to translations as well as new translations can be submitted to
-[Ebocoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
+[Tcash Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.

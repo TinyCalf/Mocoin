@@ -1,7 +1,7 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to
 release-notes at release time)
 
-Ebocoin Core version *version* is now available from:
+Tcash Core version *version* is now available from:
 
   <https://bitcoin.org/bin/bitcoin-core-*version*/>
 
@@ -47,10 +47,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-Ebocoin Core is extensively tested on multiple operating systems using
+Tcash Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-Ebocoin Core should also work on most other Unix-like systems but is not
+Tcash Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes

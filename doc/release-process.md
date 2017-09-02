@@ -108,7 +108,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Ebocoin Core for Linux, Windows, and OS X:
+### Build and sign Tcash Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
     ./bin/gbuild --num-make 2 --memory 3000 --commit bitcoin=v${VERSION} ../bitcoin/contrib/gitian-descriptors/gitian-linux.yml
@@ -292,7 +292,7 @@ bitcoin.org (see below for bitcoin.org update instructions).
 
   - bitcoin-dev and bitcoin-core-dev mailing list
 
-  - Ebocoin Core announcements list https://bitcoincore.org/en/list/announcements/join/
+  - Tcash Core announcements list https://bitcoincore.org/en/list/announcements/join/
 
   - bitcoincore.org blog post
 

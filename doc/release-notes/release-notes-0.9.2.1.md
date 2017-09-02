@@ -1,4 +1,4 @@
-Ebocoin Core version 0.9.2.1 is now available from:
+Tcash Core version 0.9.2.1 is now available from:
 
   https://bitcoin.org/bin/0.9.2.1/
 
