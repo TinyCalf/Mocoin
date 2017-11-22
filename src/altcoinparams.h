@@ -20,15 +20,15 @@ Main Net
 */
 
 /*chainparams.cpp*/
-const static int HALVING_INTERVAL =  100;
-const static int POW_TARGET_TIMESPAWN = 60 * 60 * 24 * 356 ;
+const static int HALVING_INTERVAL =  4000;
+const static int POW_TARGET_TIMESPAWN = 2 * 60 * 4000;
 const static int POW_TARGET_SPACING = 2 * 60;
 const static bool POW_ALLOW_MIN_DIFFICULTY_BLOCKS = false;
 const static int MESSAGE_START_0 = 0x90;
 const static int MESSAGE_START_1 = 0x0d;
-const static int MESSAGE_START_2 = 0x23;
-const static int MESSAGE_START_3 = 0x34;
-const static int DEFAULT_PORT = 19939;
+const static int MESSAGE_START_2 = 0x24;
+const static int MESSAGE_START_3 = 0x44;
+const static int DEFAULT_PORT = 19999;
 
 const static int NTIME =  1500501600;
 const static int NNOUNCE = 57739874;
@@ -40,26 +40,29 @@ const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f
 //const static char*DNSSEEDS1= "120.92.35.170";
 //const static char*DNSSEEDS2="120.92.35.170";
 
-const static int nPUBKEY_ADDRESS = 44;
-const static int nSCRIPT_ADDRESS = 54;
-const static int nSECRET_KEY = 66;
+const static int nPUBKEY_ADDRESS = 45;
+const static int nSCRIPT_ADDRESS = 55;
+const static int nSECRET_KEY = 65;
 const static bool MINING_REQUIRES_PEERS = false;
 const static char* POW_LIMIT = "0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 /*TODO: CHECKPOINTS*/
 
 /*consensus/consensus.h*/
-const static int ALT_COINBASE_MATURITY =3;
+const static int ALT_COINBASE_MATURITY = 100;
 
 /*main.cpp*/
-const static int REWORD_OF_MINING = 251257;
+const static int REWORD_OF_MINING = 18750;
 
 /*util.h*/
 // directory name  named after the altcoin
-const static char* DATA_FILE_NAME =  "Tcash";
-const static char* DATA_FILE_NAME_UNIX =  ".tcash";
+const static char* DATA_FILE_NAME =  "Unitcoin";
+const static char* DATA_FILE_NAME_UNIX =  ".unitcoin";
 
 /*TODO:qt default data path*/
 
-const static int RPC_PORT =  19938;
+const static int RPC_PORT =  19998;
+
+/*clientversion.cpp*/
+const static char* CLIENTNAME = "tinycalf"
 
 #endif // BITCOIN_ALTCOINPARAMS_H

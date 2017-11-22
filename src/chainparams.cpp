@@ -84,7 +84,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = POW_ALLOW_MIN_DIFFICULTY_BLOCKS; // Jonathan MBC
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nMinerConfirmationWindow = POW_TARGET_TIMESPAWN/POW_TARGET_SPACING ; // nPowTargetTimespan / nPowTargetSpacing
         
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         //consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
@@ -134,10 +134,10 @@ public:
         // vSeeds.push_back(CDNSSeedData("60.29.18.50", "60.29.18.50"));
         // vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223"));   
         
-       vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223")); 
-        vSeeds.push_back(CDNSSeedData("120.92.44.149", "120.92.44.149")); 
-        vSeeds.push_back(CDNSSeedData("139.219.239.47", "139.219.239.47")); 
-        vSeeds.push_back(CDNSSeedData("120.92.91.36", "120.92.91.36")); 
+       //vSeeds.push_back(CDNSSeedData("42.159.249.223", "42.159.249.223")); 
+        //vSeeds.push_back(CDNSSeedData("120.92.44.149", "120.92.44.149")); 
+        //vSeeds.push_back(CDNSSeedData("139.219.239.47", "139.219.239.47")); 
+        //vSeeds.push_back(CDNSSeedData("120.92.91.36", "120.92.91.36")); 
          
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,nPUBKEY_ADDRESS); //J   MBC
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,nSCRIPT_ADDRESS); //N Jonathan MBC
