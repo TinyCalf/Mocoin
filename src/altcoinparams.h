@@ -63,6 +63,6 @@ const static char* DATA_FILE_NAME_UNIX =  ".unitcoin";
 const static int RPC_PORT =  19998;
 
 /*clientversion.cpp*/
-const static char* CLIENTNAME = "tinycalf"
+const static char* CLIENTNAME = "Tinycalf";
 
 #endif // BITCOIN_ALTCOINPARAMS_H
