@@ -124,8 +124,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462"));//Jonathan 树形结构哈系值
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        // vSeeds.emplace_back("42.159.249.223", false);//Jonathan 节点1
-        // vSeeds.emplace_back("120.92.44.149", false);//Jonathan 节点2
+        vSeeds.emplace_back("23.91.103.11", false);//Jonathan 节点1
+        vSeeds.emplace_back("23.91.103.66", false);//Jonathan 节点2
         // vSeeds.emplace_back("139.219.239.47", false); //Jonathan 节点3
         // vSeeds.emplace_back("120.92.91.36", false); //Jonathan 节点4
         // vSeeds.emplace_back("120.92.118.219", false); //Jonathan 节点5
