@@ -768,7 +768,7 @@
         <translation>Operare infere sicut daemon et mandata accipe</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
+        <source>Unitcoin Core</source>
         <translation>Bitcoin Nucleus</translation>
     </message>
     <message>

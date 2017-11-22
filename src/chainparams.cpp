@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Tcash Core developers
+// Copyright (c) 2009-2016 The Unitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -74,18 +74,18 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 100; //Jonathan 减半区块周期
+        consensus.nSubsidyHalvingInterval = 4000; //Jonathan 减半区块周期
         consensus.BIP34Height = 227931;
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.BIP65Height = 388381; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 363725; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");//Jonathan 最小难度限制
-        consensus.nPowTargetTimespan = 60 * 60 * 24 * 365; //Jonathan 难度周期
+        consensus.nPowTargetTimespan = 2 * 60 * 4000; //Jonathan 难度周期
         consensus.nPowTargetSpacing = 2 * 60; //Jonathan 块生成速度估算值
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nMinerConfirmationWindow = 4000; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 2199145601; //Jonathan 暂时未知其具体影响，改大一点避免问题
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 2230767999; //Jonathan 暂时未知其具体影响，改大一点避免问题
@@ -113,9 +113,9 @@ public:
          */
         pchMessageStart[0] = 0x90;//Jonathan 消息头0
         pchMessageStart[1] = 0x0d;//Jonathan 消息头1
-        pchMessageStart[2] = 0x23;//Jonathan 消息头2
-        pchMessageStart[3] = 0x34;//Jonathan 消息头3
-        nDefaultPort = 19939;//Jonathan 默认端口
+        pchMessageStart[2] = 0x24;//Jonathan 消息头2
+        pchMessageStart[3] = 0x44;//Jonathan 消息头3
+        nDefaultPort = 19999;//Jonathan 默认端口
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1500501600, 57739874, 0x1d0fffff, 1, 100 * COIN);//Jonathan 创世块的 时间戳/随机数/难度/Version（不变）/回报
@@ -124,17 +124,17 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462"));//Jonathan 树形结构哈系值
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("42.159.249.223", false);//Jonathan 节点1
-        vSeeds.emplace_back("120.92.44.149", false);//Jonathan 节点2
-        vSeeds.emplace_back("139.219.239.47", false); //Jonathan 节点3
-        vSeeds.emplace_back("120.92.91.36", false); //Jonathan 节点4
-        vSeeds.emplace_back("120.92.118.219", false); //Jonathan 节点5
+        // vSeeds.emplace_back("42.159.249.223", false);//Jonathan 节点1
+        // vSeeds.emplace_back("120.92.44.149", false);//Jonathan 节点2
+        // vSeeds.emplace_back("139.219.239.47", false); //Jonathan 节点3
+        // vSeeds.emplace_back("120.92.91.36", false); //Jonathan 节点4
+        // vSeeds.emplace_back("120.92.118.219", false); //Jonathan 节点5
 
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,44);//Jonathan PUBKEY_ADDRESS
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,54);//Jonathan SCRIPT_ADDRESS
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,66);//Jonathan SECRET_KEY
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,45);//Jonathan PUBKEY_ADDRESS
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,55);//Jonathan SCRIPT_ADDRESS
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,65);//Jonathan SECRET_KEY
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
@@ -185,15 +185,15 @@ public:
         consensus.BIP65Height = 581885; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
         consensus.BIP66Height = 330776; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
         consensus.powLimit = uint256S("0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");//Jonathan 测试网最小难度限制
-        consensus.nPowTargetTimespan = 60 * 60 * 24 * 365; //Jonathan 测试网难度周期
+        consensus.nPowTargetTimespan = 2 * 60 * 4000; //Jonathan 测试网难度周期
         consensus.nPowTargetSpacing = 2 * 60; //Jonathan 测试网块生成速度估算值
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nMinerConfirmationWindow = 4000; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
+     consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
+         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;

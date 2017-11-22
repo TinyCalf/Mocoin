@@ -3058,8 +3058,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
-        <translation>Tcash Core</translation>
+        <source>Unitcoin Core</source>
+        <translation>Unitcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

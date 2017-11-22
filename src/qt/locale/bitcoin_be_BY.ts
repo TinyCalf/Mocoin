@@ -1258,8 +1258,8 @@
         <translation>Запусціць у фоне як дэман і прымаць каманды</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
-        <translation>Tcash Core</translation>
+        <source>Unitcoin Core</source>
+        <translation>Unitcoin Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

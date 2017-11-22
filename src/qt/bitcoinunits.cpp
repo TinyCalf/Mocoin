@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Tcash Core developers
+// Copyright (c) 2011-2016 The Unitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -40,9 +40,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("TCC");//Jonathan 单位修改
-    case mBTC: return QString("mTCC");//Jonathan 单位修改
-    case uBTC: return QString::fromUtf8("μTCC");//Jonathan 单位修改
+    case BTC: return QString("UTC");//Jonathan 单位修改
+    case mBTC: return QString("mUTC");//Jonathan 单位修改
+    case uBTC: return QString::fromUtf8("μUTC");//Jonathan 单位修改
     default: return QString("???");
     }
 }

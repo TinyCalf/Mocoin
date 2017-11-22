@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Tcash Core developers
+// Copyright (c) 2011-2016 The Unitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Tcash" //Jonathan
-#define QAPP_ORG_DOMAIN "Tcash.org" //Jonathan
-#define QAPP_APP_NAME_DEFAULT "Tcash-Qt" //Jonathan
-#define QAPP_APP_NAME_TESTNET "Tcash-Qt-testnet" //Jonathan
+#define QAPP_ORG_NAME "Unitcoin" //Jonathan
+#define QAPP_ORG_DOMAIN "Unitcoin.org" //Jonathan
+#define QAPP_APP_NAME_DEFAULT "Unitcoin-Qt" //Jonathan
+#define QAPP_APP_NAME_TESTNET "Unitcoin-Qt-testnet" //Jonathan
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

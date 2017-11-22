@@ -2862,8 +2862,8 @@
         <translation>No s'ha pogut iniciar el servidor HTTP. Vegeu debug.log per a més detalls.</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
-        <translation>Tcash Core</translation>
+        <source>Unitcoin Core</source>
+        <translation>Unitcoin Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

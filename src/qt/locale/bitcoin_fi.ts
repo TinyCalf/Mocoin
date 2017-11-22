@@ -2430,7 +2430,7 @@
         <translation>HTTP-palvelinta ei voitu käynnistää. Katso debug-lokista lisätietoja.</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
+        <source>Unitcoin Core</source>
         <translation>Bitcoin-ydin</translation>
     </message>
     <message>

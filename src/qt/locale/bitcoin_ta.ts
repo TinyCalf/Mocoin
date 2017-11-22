@@ -708,7 +708,7 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Tcash Core</source>
+        <source>Unitcoin Core</source>
         <translation>Bitcoin மையம்</translation>
     </message>
     <message>

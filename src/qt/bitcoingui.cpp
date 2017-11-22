@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Tcash Core developers
+// Copyright (c) 2011-2016 The Unitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -873,7 +873,7 @@ void BitcoinGUI::setNumBlocks(int count, const QDateTime& blockDate, double nVer
 
 void BitcoinGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
-    QString strTitle = tr("Tcash"); //Jonathan 默认标题
+    QString strTitle = tr("Unitcoin"); //Jonathan 默认标题
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;

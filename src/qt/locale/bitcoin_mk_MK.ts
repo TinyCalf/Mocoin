@@ -578,7 +578,7 @@
         <translation>Опции:</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
+        <source>Unitcoin Core</source>
         <translation>Биткоин Core</translation>
     </message>
     <message>

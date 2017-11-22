@@ -1012,7 +1012,7 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Tcash Core</source>
+        <source>Unitcoin Core</source>
         <translation>Bitcoin Kern</translation>
     </message>
     <message>

@@ -1,4 +1,4 @@
-// Copyright (c) 2014 The Tcash Core developers
+// Copyright (c) 2014 The Unitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

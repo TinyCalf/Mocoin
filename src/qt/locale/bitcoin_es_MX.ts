@@ -608,7 +608,7 @@
         <translation>Opciones:</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
+        <source>Unitcoin Core</source>
         <translation>nucleo Bitcoin</translation>
     </message>
     <message>

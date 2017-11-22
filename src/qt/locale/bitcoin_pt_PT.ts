@@ -2943,8 +2943,8 @@
         <translation>Não é possível iniciar o servidor HTTP. Verifique o debug.log para detalhes.</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
-        <translation>Tcash Core</translation>
+        <source>Unitcoin Core</source>
+        <translation>Unitcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

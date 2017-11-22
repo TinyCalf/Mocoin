@@ -2919,8 +2919,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Impossibile avviare il server HTTP. Dettagli nel log di debug.</translation>
     </message>
     <message>
-        <source>Tcash Core</source>
-        <translation>Tcash Core</translation>
+        <source>Unitcoin Core</source>
+        <translation>Unitcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

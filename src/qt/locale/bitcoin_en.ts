@@ -4066,8 +4066,8 @@
     </message>
     <message>
         <location line="-386"/>
-        <source>Tcash Core</source>
-        <translation type="unfinished">Tcash Core</translation>
+        <source>Unitcoin Core</source>
+        <translation type="unfinished">Unitcoin Core</translation>
     </message>
     <message>
         <location line="+1"/>

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Tcash Core developers
+// Copyright (c) 2009-2016 The Unitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -528,7 +528,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Tcash";//Jonathan Win默认路径名称
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Unitcoin";//Jonathan Win默认路径名称
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -538,10 +538,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Tcash";//Jonathan Mac默认路径名称
+    return pathRet / "Library/Application Support/Unitcoin";//Jonathan Mac默认路径名称
 #else
     // Unix
-    return pathRet / ".tcash";//Jonathan Linux默认路径名称
+    return pathRet / ".unitcoin";//Jonathan Linux默认路径名称
 #endif
 #endif
 }
@@ -885,9 +885,9 @@ std::string CopyrightHolders(const std::string& strPrefix)
 {
     std::string strCopyrightHolders = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
 
-    // Check for untranslated substitution to make sure Tcash Core copyright is not removed by accident
-    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Tcash Core") == std::string::npos) {
-        strCopyrightHolders += "\n" + strPrefix + "The Tcash Core developers";
+    // Check for untranslated substitution to make sure Unitcoin Core copyright is not removed by accident
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Unitcoin Core") == std::string::npos) {
+        strCopyrightHolders += "\n" + strPrefix + "The Unitcoin Core developers";
     }
     return strCopyrightHolders;
 }

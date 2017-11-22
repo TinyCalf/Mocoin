@@ -1123,7 +1123,7 @@
 </translation>
     </message>
     <message>
-        <source>Tcash Core</source>
+        <source>Unitcoin Core</source>
         <translation>Núcleo de Bitcoin</translation>
     </message>
     <message>
